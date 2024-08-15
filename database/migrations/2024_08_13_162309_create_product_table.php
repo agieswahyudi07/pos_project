@@ -18,6 +18,7 @@ return new class extends Migration
             $table->decimal('price', 10, 2)->default(0);
             $table->text('description')->nullable();
             $table->text('composition')->nullable();
+            $table->foreignId("category_id");
             $table->boolean('is_active');
             $table->timestamps();
         });

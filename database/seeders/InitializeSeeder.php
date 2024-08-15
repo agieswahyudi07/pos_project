@@ -70,6 +70,7 @@ class InitializeSeeder extends Seeder
             'company_id' => 1,
             'name' => 'Agies Wahyudi',
             'email' => 'agieswahyudi@gmail.com',
+            'phone' => '081398257238',
             'password' => 'agieswahyudi',
             'role_id' => 1,
             'is_active' => 1,
