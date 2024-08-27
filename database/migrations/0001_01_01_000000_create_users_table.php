@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId("company_id");
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('phone', 13);
+            $table->string('phone');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->foreignId('role_id')->default(0);

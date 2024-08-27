@@ -22,8 +22,9 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanc
 // AUTH ROUTE 
 
 // USER ROUTE 
-// Route::post('/users', [UsersController::class, 'index'])->name('register');
-Route::resource('users', UsersController::class);
+// Route::middleware('auth:sanctum', function () {
+Route::resource('users', UsersController::class)->middleware('auth:sanctum');
+// });
 // USER ROUTE 
 
 Route::get('/test_api', function () {

@@ -36,7 +36,11 @@ class UsersController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+        $request->validate([
+            '' => '',
+        ], [
+            '' => ','
+        ]);
     }
 
     /**
